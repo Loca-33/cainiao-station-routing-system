@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>菜鸟驿站送货小车路径规划系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="loadMapButton">
+        <property name="text">
+         <string>加载地图</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="task3Button">
+        <property name="text">
+         <string>任务三: 送货方案</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="task4Button">
+        <property name="text">
+         <string>任务四: 退货路线</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="task5Button">
+        <property name="text">
+         <string>任务五: 充电距离</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="extTask1Button">
+        <property name="text">
+         <string>扩展一: 双车送货</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="extTask2Button">
+        <property name="text">
+         <string>扩展二: 发货时间</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGraphicsView" name="mapGraphicsView">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>400</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionLoad_Map"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuTasks">
+    <property name="title">
+     <string>任务</string>
+    </property>
+    <addaction name="actionTask3"/>
+    <addaction name="actionTask4"/>
+    <addaction name="actionTask5"/>
+    <addaction name="actionExtTask1"/>
+    <addaction name="actionExtTask2"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTasks"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_Map">
+   <property name="text">
+    <string>加载地图</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionTask3">
+   <property name="text">
+    <string>任务三: 送货方案</string>
+   </property>
+  </action>
+  <action name="actionTask4">
+   <property name="text">
+    <string>任务四: 退货路线</string>
+   </property>
+  </action>
+  <action name="actionTask5">
+   <property name="text">
+    <string>任务五: 充电距离</string>
+   </property>
+  </action>
+  <action name="actionExtTask1">
+   <property name="text">
+    <string>扩展一: 双车送货</string>
+   </property>
+  </action>
+  <action name="actionExtTask2">
+   <property name="text">
+    <string>扩展二: 发货时间</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
